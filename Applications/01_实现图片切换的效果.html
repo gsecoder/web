@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01_实现图片切换的效果</title>
+	<style>
+		*{
+			margin: 0px;
+			top: 0px;
+		}
+
+		.outer{
+			width: 890px;
+			height: 400px;
+			border: solid 1px orangered;
+			margin: 40px auto;
+			position: relative;
+		}
+
+		ul{
+			list-style: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+
+		.com{
+			position: absolute;
+			display: none;
+		}
+
+		.num{
+			position: absolute;
+			top: 300px;
+			left: 300px;
+		}
+
+		.num li{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			color: black;
+			background-color: white;
+			border-radius: 50%; /*//边框弧度*/
+			line-height: 20px;
+			text-align: center;
+		}
+
+		.btn{
+			position: absolute;
+			width: 40px;
+			height: 60px;
+			background-color: grey;
+			opacity: 0.5; /*//透明度*/
+			color: black;
+			font-weight: 900;  /*//加粗*/
+			text-align: center;
+			line-height: 60px;
+			top:50%;
+			margin-top: -30px;
+		}
+
+		.leftbtn{
+			left: 0px;
+		}
+		.rightbtn{
+			right: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<ul class="img">
+			<li class="com"><a href=""><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551876663452&di=ea4c3fb0d500998763ab5a65ae17e399&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F19%2F68%2F18%2F52z58PIC3Jq_1024.jpg"></a></li>
+			<li class="com"><a href=""><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551876802450&di=c325b3051c20dd3a16ab4f081773186b&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F02dcc6b868a63398b9555e4bb43c6c1996a50c8c50ca-Alkyvy_fw658"></a></li>
+			<li class="com"><a href=""><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551876663452&di=ff41ac3125ff48274ed9a15ab4ff6c1d&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F19%2F77%2F58%2F02I58PICwjV_1024.jpg"></a></li>
+			<li class="com"><a href=""><img src="http://bpic.588ku.com/back_pic/04/80/64/6658bed6d6b6ef2.jpg"></a></li>
+			<li class="com"><a href=""><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551876802453&di=aa67b3f5b7a42f621dc7c19715296f9f&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F19%2F77%2F61%2F66P58PICrDw_1024.jpg"></a></li>
+		</ul>
+		<ul class="num">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+		<div class="leftbtn btn"> < </div>
+		<div class="rightbtn btn"> > </div>
+	</div>
+</body>
+</html>
