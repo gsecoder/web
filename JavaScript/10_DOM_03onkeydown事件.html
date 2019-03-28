@@ -19,7 +19,7 @@
 	"T1": <input type="text" id="t1">
 
 	<script>
-		var ele = document.getElementsByClassName('text')[0];
+		var ele = document.getElementsByClassName('test')[0];
 		// event :每次触发事件时所有的状态信息
 		// event.keyCode ：保存着所有的状态信息
 		ele.onkeydown = function (event) {
@@ -28,7 +28,7 @@
 			console.log(event.keyCode);
 			if (event.keyCode == 13) {
 				// 按回车就会弹出
-				console.log('666666');
+				console.log('666666')
 			}
 		};
 	</script>
@@ -37,12 +37,10 @@
 		var ele=document.getElementById("t1");
 		ele.onkeydown=function(e){
 			e=e||window.event;
-			var keynum=e.keyCode;
-			var keychar=String.fromCharCode(keynum);
-//        console.log(keynum); //每次键盘敲下的状态信息
-//        console.log(keychar);  //输入的字符
-//        alert(keynum);
-//        alert(keychar)  //你键盘输入的字符
+			var keyNum=e.keyCode;
+			var keyChar=String.fromCharCode(keyNum);
+       console.log(keyNum); //每次键盘敲下的状态信息
+       console.log(keyChar);  //输入的字符
 		};
 	</script>
 
