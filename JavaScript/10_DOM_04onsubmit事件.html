@@ -18,16 +18,16 @@
 		    console.log(userName);
 		    console.log(userAge);
 
-		    if(userName == 'crisimple'){
+		    if (userName == 'crisimple'){
 		        /*阻止默认事件的两种方式*/
 			    // 方式一：
-			    return false;
+			    // return false;
 
 			    // 方式二：给函数给一个形参，这个形参写什么都行，一般我们写成event
 			    // 阻止默认事件（表单的提交）
-			    event.preventDefault()
-		    }
-		}
+			    event.preventDefault();
+		    };
+		};
 	</script>
 </head>
 <body>
