@@ -3,6 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>10_DOM_04onsubmit事件</title>
+</head>
+<body>
+	<form action="" id="submit">
+		<p>姓名：<input type="text" class="name"></p>
+		<p>年龄：<input type="text" class="age"></p>
+		<input type="submit">
+	</form>
+	<input type="text" class="test">
+
 	<script>
 		/*
 		* 当表单在提交时触发，该属性只能给form元素使用；
@@ -13,29 +22,21 @@
 		var ele_age = document.getElementsByClassName('age')[0];
 
 		ele_form.onsubmit = function (event) {
-		    var userName = ele_name.value;
-		    var userAge = ele_age.value;
-		    console.log(userName);
-		    console.log(userAge);
+			var userName = ele_name.value;
+			var userAge = ele_age.value;
+			console.log(userName);
+			console.log(userAge);
 
-		    if (userName == 'crisimple'){
-		        /*阻止默认事件的两种方式*/
-			    // 方式一：
-			    // return false;
+			if (userName == 'crisimple'){
+				/*阻止默认事件的两种方式*/
+				// 方式一：
+				// return false;
 
-			    // 方式二：给函数给一个形参，这个形参写什么都行，一般我们写成event
-			    // 阻止默认事件（表单的提交）
-			    event.preventDefault();
-		    };
+				// 方式二：给函数给一个形参，这个形参写什么都行，一般我们写成event
+				// 阻止默认事件（表单的提交）
+				event.preventDefault();
+			};
 		};
 	</script>
-</head>
-<body>
-	<form action="" id="submit">
-		<p>姓名：<input type="text" class="name"></p>
-		<p>年龄：<input type="text" class="age"></p>
-		<input type="submit">
-	</form>
-	<input type="text" class="test">
 </body>
 </html>
