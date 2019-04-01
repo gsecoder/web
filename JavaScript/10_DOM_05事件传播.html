@@ -15,6 +15,13 @@
             background-color: yellow;
         }
     </style>
+
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
     <script>
         /*
         * 因为box1是box2的的父亲，所以给父亲一个绑定事件，就相当于给儿子一个绑定事件。
@@ -36,10 +43,5 @@
             event.stopPropagation();
         };
     </script>
-</head>
-<body>
-    <div class="box1">
-        <div class="box2"></div>
-    </div>
 </body>
 </html>
