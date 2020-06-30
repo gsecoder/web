@@ -28,7 +28,7 @@
     <h3>表单元素：</h3>
         单行文本框: <input type="text"/>      <br>
         密码框: <input type="password"/>     <br>
-        单选按钮: <input type="radio"/>      <br>
+        单选按钮: 单1 <input type="radio" name="single"/>   单2 <input type="radio" name="single"/>   <br>
         复选框: <input type="checkbox"/>     <br>
         隐藏域: <input type="hidden" />     <br>
         文件上传: <input type="file" />      <br>
@@ -39,9 +39,30 @@
         data: <input type="date">  <br>
         search: <input type="search" />  <br>
         color: <input type="color">  <br>
-        <form action="" method="post" enctype="multipart/form-data">
-            <input type="file" name="file1"/>
-            <input type=”submit” />
+
+        <hr>
+        <!-- 表单-->
+        <form action="https://127.0.0.1/index/?" method="post" enctype="multipart/form-data">
+            <!-- https://www.sogou.com/web?query=Test -->
+            <input type="text" name="query">
+            男：<input type="radio" name="gender" value="1">
+            女：<input type="radio" name="gender" value="0">
+            <p>运动：
+                足球：<input name="play" type="checkbox" value="ft">
+                篮球：<input name="play" type="checkbox" value="ba">
+            </p>
+            文件：<input name="filename" type="file">
+            <p>下拉项
+                <select name="city">
+                    <option value="bj">北京</option>
+                    <option value="sh">上海</option>
+                    <option value="gz">广州</option>
+                </select>
+            </p>
+            <p>备注
+                <textarea name="texart"></textarea>
+            </p>
+            <input type="submit" value="查询">
         </form>
 
     <hr>
@@ -73,8 +94,8 @@
 
     <hr>
     <h3>标签label：</h3>
-        <label for=”MyId”></label>
-        <input type=”radio” id=”MyId”>
+        <label for="id" > </label>
+        <input type="radio" id=”MyId”> 测试
 
     <hr>
     <h3>元素集：</h3>
