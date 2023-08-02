@@ -15,13 +15,13 @@
         /*方法一：*/
         function foo1(args) {
             console.log(args)
-            return "Hello JS";
+            return "base.Hello JS";
         };
 
         console.log(foo1(1));
 
         /*方法二：*/
-        var foo2 = new Function('name', "console.log(\'Hello '\ + name)")
+        var foo2 = new Function('name', "console.log(\'base.Hello '\ + name)")
         foo2('JavaScript')
     </script>
 
@@ -29,7 +29,7 @@
     <script>
         function foo21(args) {
             console.log(args)
-            return "Hello JS";
+            return "base.Hello JS";
         };
         console.log(foo21('Test').length)
     </script>
