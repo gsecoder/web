@@ -224,7 +224,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		// Only deal with non-null/undefined values
 		if ( ( options = arguments[ i ] ) != null ) {
 
-			// Extend the base object
+			// Extend the com.secoder.base object
 			for ( name in options ) {
 				src = target[ name ];
 				copy = options[ name ];
@@ -1109,7 +1109,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	var hasCompare, subWindow,
 		doc = node ? node.ownerDocument || node : preferredDoc;
 
-	// Return early if doc is invalid or already selected
+	// Return early if com.secoder.doc is invalid or already selected
 	if ( doc === document || doc.nodeType !== 9 || !doc.documentElement ) {
 		return document;
 	}
@@ -1160,7 +1160,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	// Support: IE<10
 	// Check if getElementById returns elements by name
 	// The broken getElementById methods don't pick up programmatically-set names,
-	// so use a roundabout getElementsByName test
+	// so use a roundabout getElementsByName com.secoder.test
 	support.getById = assert(function( el ) {
 		docElem.appendChild( el ).id = expando;
 		return !document.getElementsByName || !document.getElementsByName( expando ).length;
@@ -1280,7 +1280,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		// Regex strategy adopted from Diego Perini
 		assert(function( el ) {
 			// Select is set to empty string on purpose
-			// This is to test IE's treatment of not explicitly
+			// This is to com.secoder.test IE's treatment of not explicitly
 			// setting a boolean content attribute,
 			// since its presence should be enough
 			// https://bugs.jquery.com/ticket/12359
@@ -1290,7 +1290,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 
 			// Support: IE8, Opera 11-12.16
 			// Nothing should be selected when empty strings follow ^= or $= or *=
-			// The test attribute must be unknown in Opera but "safe" for WinRT
+			// The com.secoder.test attribute must be unknown in Opera but "safe" for WinRT
 			// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
 			if ( el.querySelectorAll("[msallowcapture^='']").length ) {
 				rbuggyQSA.push( "[*^$]=" + whitespace + "*(?:''|\"\")" );
@@ -2066,7 +2066,7 @@ Expr = Sizzle.selectors = {
 		// Contents
 		"empty": function( elem ) {
 			// http://www.w3.org/TR/selectors/#empty-pseudo
-			// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
+			// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; com.secoder.entity ref: 5),
 			//   but not by others (comment: 8; processing instruction: 7; etc.)
 			// nodeType < 6 works because attributes (2) do not appear as children
 			for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
@@ -2935,7 +2935,7 @@ jQuery.fn.extend( {
 			this,
 
 			// If this is a positional/relative selector, check membership in the returned set
-			// so $("p:first").is("p:last") won't return true for a doc with two "p".
+			// so $("p:first").is("p:last") won't return true for a com.secoder.doc with two "p".
 			typeof selector === "string" && rneedsContext.test( selector ) ?
 				jQuery( selector ) :
 				selector || [],
@@ -6229,7 +6229,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 				return;
 			}
 
-			// Hook needed; redefine it so that the support test is not executed again.
+			// Hook needed; redefine it so that the support com.secoder.test is not executed again.
 			return ( this.get = hookFn ).apply( this, arguments );
 		}
 	};
@@ -9785,7 +9785,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 		if ( support.createHTMLDocument ) {
 			context = document.implementation.createHTMLDocument( "" );
 
-			// Set the base href for the created document
+			// Set the com.secoder.base href for the created document
 			// so any parsed elements with URLs
 			// are based on the document's URL (gh-2965)
 			base = context.createElement( "base" );

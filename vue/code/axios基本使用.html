@@ -32,13 +32,13 @@
         }
         /*
              接口2:用户注册
-             请求地址:https://autumnfish.cn/api/user/reg
+             请求地址:https://autumnfish.cn/api/users/reg
              请求方法:post
              请求参数:username(用户名,字符串)
              响应内容:注册成功或失败
          */
         document.querySelector(".post").onclick = function () {
-            axios.post("https://autumnfish.cn/api/user/reg",{username:"盐焗西兰花"})
+            axios.post("https://autumnfish.cn/api/users/reg",{username:"盐焗西兰花"})
             .then(function(response){
                 console.log(response);
                 console.log(this.skill);

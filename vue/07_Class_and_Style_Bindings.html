@@ -9,14 +9,14 @@
 	<div id="app">
 		
 		<!--绑定 HTML Class-->
-		<div class="test" v-bind:class="[isActive ? 'active': '', isGreen ? 'green': '']"
+		<div class="com.secoder.test" v-bind:class="[isActive ? 'active': '', isGreen ? 'green': '']"
 		     style="width: 200px; height: 200px; text-align: center; line-height: 200px">
 			Hi Vue!
 		</div>
 		
 		<!--绑定内联样式-->
 		<div :style="{color:color, fontSize: size, background: isRed ? 'red': ''}">
-			Hello Vue!
+			com.secoder.base.Hello Vue!
 		</div>
 		
 	</div>
@@ -35,7 +35,7 @@
 	</script>
 
 	<style>
-		.test{font-size: 20px}
+		.com.secoder.test{font-size: 20px}
 		.green{color: green}
 		.active{background: yellow}
 	</style>

@@ -48,9 +48,9 @@
 
             <dl v-for="item in hotComments">
               <dt>
-                <img :src="item.user.avatarUrl" alt="" />
+                <img :src="item.users.avatarUrl" alt="" />
               </dt>
-              <dd class="name">{{item.user.nickname}}</dd>
+              <dd class="name">{{item.users.nickname}}</dd>
               <dd class="detail">
                 {{item.content}}
               </dd>

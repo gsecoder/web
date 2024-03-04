@@ -19,5 +19,5 @@ from mypublic import views as mpv
 
 urlpatterns = [
     path('wx/', mpv.check_signature),
-    path('admin/', admin.site.urls),
+    path('com.secoder.admin/', admin.site.urls),
 ]
